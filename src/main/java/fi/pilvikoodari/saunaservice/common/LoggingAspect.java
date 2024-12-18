@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
-public class LonggingAspect {
-    private static final Logger LOGGER = LoggerFactory.getLogger(LonggingAspect.class);
+public class LoggingAspect {
+    private static final Logger LOGGER = LoggerFactory.getLogger(LoggingAspect.class);
 
     @AfterReturning("execution(* fi.pilvikoodari.saunaservice.repository.SaunaRepository.findAll())")
     public void logLoading() {
