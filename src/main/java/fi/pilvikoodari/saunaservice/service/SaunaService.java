@@ -38,7 +38,7 @@ public class SaunaService implements ISaunaService {
     }
 
     public List<Sauna> getAllSaunas() {
-        if (saunas != null || utils.isSaunaDataExpired(saunaDataLaoded)) {
+        if (saunas == null || utils.isSaunaDataExpired(saunaDataLaoded)) {
             saunas = saunaRepository.findAll();
             sortSaunaData(saunas);
             saunaDataLaoded = new Date();
