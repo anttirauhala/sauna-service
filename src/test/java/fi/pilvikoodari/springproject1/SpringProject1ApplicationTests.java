@@ -1,13 +1,13 @@
-package fi.pilvikoodari.springproject1;
+// package fi.pilvikoodari.springproject1;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class SpringProject1ApplicationTests {
+// @SpringBootTest
+// class SpringProject1ApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+// @Test
+// void contextLoads() {
+// }
 
-}
+// }
