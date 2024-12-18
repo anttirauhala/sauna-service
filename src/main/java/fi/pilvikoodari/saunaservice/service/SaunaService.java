@@ -9,14 +9,12 @@ import org.springframework.stereotype.Service;
 import fi.pilvikoodari.saunaservice.common.SaunaException;
 import fi.pilvikoodari.saunaservice.common.Utils;
 import fi.pilvikoodari.saunaservice.model.OpeningHour;
-import fi.pilvikoodari.saunaservice.model.Price;
 import fi.pilvikoodari.saunaservice.model.Sauna;
 import fi.pilvikoodari.saunaservice.repository.ISaunaRepository;
 
 import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
