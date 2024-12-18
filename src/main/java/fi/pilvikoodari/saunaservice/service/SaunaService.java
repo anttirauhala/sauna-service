@@ -100,9 +100,6 @@ public class SaunaService implements ISaunaService {
 
         // Comparator for weekdays
         Comparator<OpeningHour> weekdayComparator = Comparator.comparingInt(o -> {
-            System.out.println("o.getWeekday(): " + o.getWeekday());
-            System.out.println(
-                    "weekdaysOrder.indexOf(o.getWeekday()): " + weekdaysOrder.indexOf(o.getWeekday().toString()));
             return weekdaysOrder.indexOf(o.getWeekday().toString());
         });
 
