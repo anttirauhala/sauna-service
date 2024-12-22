@@ -18,7 +18,7 @@ import fi.pilvikoodari.saunaservice.service.ISaunaService;
 import fi.pilvikoodari.saunaservice.service.SaunaService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/sauna")
 public class SaunaServiceController {
 
