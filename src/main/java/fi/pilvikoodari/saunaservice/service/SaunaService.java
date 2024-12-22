@@ -12,6 +12,8 @@ import fi.pilvikoodari.saunaservice.model.OpeningHour;
 import fi.pilvikoodari.saunaservice.model.Sauna;
 import fi.pilvikoodari.saunaservice.repository.ISaunaRepository;
 
+import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
@@ -94,21 +96,34 @@ public class SaunaService implements ISaunaService {
         List<String> weekdaysOrder = List.of("MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY",
                 "SUNDAY");
 
+        // Get today's day of the week
+        DayOfWeek today = LocalDate.now().getDayOfWeek();
+        String todayString = today.toString().toUpperCase();
+
         // Comparator for weekdays
         Comparator<OpeningHour> weekdayComparator = Comparator.comparingInt(o -> {
             return weekdaysOrder.indexOf(o.getWeekday().toString());
         });
 
         // Comparator for opening times (assuming opening times are in HH:mm format)
-        Comparator<OpeningHour> openingTimeComparator = Comparator.comparing(OpeningHour::getOpeningTime);
+        Comparator<OpeningHour> openingTimeComparator = Comparator.comparing((OpeningHour o) -> o.getOpeningTime());
 
-        for (Sauna sauna : saunas) {
-            // Sort opening hours by weekdays and opening times
-            List<OpeningHour> sortedOpeningHours = sauna.getOpeningHours().stream()
-                    .sorted(weekdayComparator.thenComparing(openingTimeComparator))
-                    .collect(Collectors.toList());
-            sauna.setOpeningHours(sortedOpeningHours);
+        // Comparator for whether the sauna is open today
+        Comparator<Sauna> openTodayComparator = Comparator
+                .comparing((Sauna sauna) -> ((Sauna) sauna).getOpeningHours().stream()
+                        .anyMatch(oh -> oh.getWeekday().toString().equals(todayString)))
+                .reversed();
 
-        }
+        saunas.sort(openTodayComparator
+                .thenComparing(Comparator.comparing(Sauna::getName))
+                // .thenComparing(openTodayComparator)
+                .thenComparing(sauna -> {
+                    List<OpeningHour> sortedOpeningHours = sauna.getOpeningHours().stream()
+                            .sorted(weekdayComparator.thenComparing(openingTimeComparator))
+                            .collect(Collectors.toList());
+                    sauna.setOpeningHours(sortedOpeningHours);
+                    return sauna.getId(); // Use a unique identifier for comparison
+                }));
+
     }
 }
