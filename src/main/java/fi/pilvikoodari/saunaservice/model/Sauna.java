@@ -10,15 +10,66 @@ public class Sauna extends BaseSaunaObject {
     private String postalCode;
     private String city;
     private List<OpeningHour> openingHours;
+    private String phone;
+    private String webPage;
+    private String info;
+    private boolean kiosk;
+    private boolean restaurant;
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getWebPage() {
+        return webPage;
+    }
+
+    public void setWebPage(String webPage) {
+        this.webPage = webPage;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
+
+    public boolean isKiosk() {
+        return kiosk;
+    }
+
+    public void setKiosk(boolean kiosk) {
+        this.kiosk = kiosk;
+    }
+
+    public boolean isRestaurant() {
+        return restaurant;
+    }
+
+    public void setRestaurant(boolean restaurant) {
+        this.restaurant = restaurant;
+    }
 
     public Sauna(UUID id, String name, String streetAddress, String postalCode, String city,
-            List<OpeningHour> openingHours) {
+            List<OpeningHour> openingHours, String phone, String webPage, String info, boolean kiosk,
+            boolean restaurant) {
         super(id);
         this.name = name;
         this.streetAddress = streetAddress;
         this.postalCode = postalCode;
         this.city = city;
         this.openingHours = openingHours;
+        this.phone = phone;
+        this.webPage = webPage;
+        this.info = info;
+        this.kiosk = kiosk;
+        this.restaurant = restaurant;
     }
 
     public Sauna(UUID id) {

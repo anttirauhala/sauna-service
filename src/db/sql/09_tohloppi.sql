@@ -1,6 +1,8 @@
 -- Insert Tohlopin tynnyrisauna
-INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city) VALUES
-    ('75d036ab-e5f4-4a11-aeed-128506047a39', 'Tohlopin tynnyrisauna', 'Pyydyspohjankatu 1', '33310', 'Tampere');
+INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, phone, web_page, info, kiosk, restaurant) VALUES
+    ('75d036ab-e5f4-4a11-aeed-128506047a39', 'Tohlopin tynnyrisauna', 'Pyydyspohjankatu 1', '33310', 'Tampere',
+    '', 'https://sites.google.com/view/tohlopinuimaseura', 'Ei suihkuja. Vaatteiden vaihto uimakopissa.', false, false);
+
 
 -- Insert opening hours for Tohlopin tynnyrisauna
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES

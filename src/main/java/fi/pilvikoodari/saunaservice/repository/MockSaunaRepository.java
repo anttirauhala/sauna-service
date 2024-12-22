@@ -33,7 +33,8 @@ public class MockSaunaRepository implements ISaunaRepository {
                                 LocalTime.of(12, 00),
                                 LocalTime.of(20, 00),
                                 prices1);
-                Sauna raikka = new Sauna(saunaId1, "Räikkä", "Räikäntie 3", "33470", "Ylöjärvi", new ArrayList<>());
+                Sauna raikka = new Sauna(saunaId1, "Räikkä", "Räikäntie 3", "33470", "Ylöjärvi", new ArrayList<>(),
+                                "+358 400 11223344", "www.sauna.fi", "info", false, false);
                 raikka.getOpeningHours().add(oh1);
                 saunas.add(raikka);
 
@@ -50,7 +51,9 @@ public class MockSaunaRepository implements ISaunaRepository {
                                 LocalTime.of(10, 00),
                                 LocalTime.of(18, 00),
                                 prices2);
-                Sauna kuuma = new Sauna(saunaId2, "Kuuma", "Kuuma Street 1", "12345", "Helsinki", new ArrayList<>());
+                Sauna kuuma = new Sauna(saunaId2, "Kuuma", "Kuuma Street 1", "12345", "Helsinki", new ArrayList<>(),
+                                "+358 400 7766555", "www.sauna2.fi", "info and info", true, false);
+
                 kuuma.getOpeningHours().add(oh2);
                 saunas.add(kuuma);
 
@@ -67,7 +70,8 @@ public class MockSaunaRepository implements ISaunaRepository {
                                 LocalTime.of(14, 00),
                                 LocalTime.of(22, 00),
                                 prices3);
-                Sauna vihta = new Sauna(saunaId3, "Vihta", "Vihta Road 5", "67890", "Tampere", new ArrayList<>());
+                Sauna vihta = new Sauna(saunaId3, "Vihta", "Vihta Road 5", "67890", "Tampere", new ArrayList<>(),
+                                "+358 500 55662211", "www.sauna3.fi", "Parking very easy", true, true);
                 vihta.getOpeningHours().add(oh3);
                 saunas.add(vihta);
 

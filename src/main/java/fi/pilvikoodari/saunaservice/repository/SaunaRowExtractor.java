@@ -38,6 +38,11 @@ public class SaunaRowExtractor implements ResultSetExtractor<List<Sauna>> {
                 sauna.setStreetAddress(rs.getString("street_address"));
                 sauna.setPostalCode(rs.getString("postal_code"));
                 sauna.setCity(rs.getString("city"));
+                sauna.setPhone(rs.getString("phone"));
+                sauna.setWebPage(rs.getString("web_page"));
+                sauna.setInfo(rs.getString("info"));
+                sauna.setKiosk(rs.getBoolean("kiosk"));
+                sauna.setRestaurant(rs.getBoolean("restaurant"));
                 saunaMap.put(saunaId, sauna);
                 saunas.add(sauna);
             }

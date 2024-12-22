@@ -1,17 +1,8 @@
 package fi.pilvikoodari.saunaservice.common;
 
-import org.springframework.stereotype.Component;
-
-import fi.pilvikoodari.saunaservice.model.OpeningHour;
-import fi.pilvikoodari.saunaservice.model.Price;
-import fi.pilvikoodari.saunaservice.model.Sauna;
-
-import java.util.Comparator;
 import java.util.Date;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Component;
 
 @Component
 public class Utils {

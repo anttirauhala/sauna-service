@@ -1,6 +1,7 @@
 -- Insert Halkoniemi sauna
-INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city) VALUES
-    ('a60daa6e-16f4-456c-8259-d7b1d663bdd3', 'Halkoniemen sauna', 'Halkoniemi', '37120', 'Nokia');
+INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, phone, web_page, info, kiosk, restaurant) VALUES
+    ('a60daa6e-16f4-456c-8259-d7b1d663bdd3', 'Halkoniemen sauna', 'Ojanteentie 16', '37120', 'Nokia', 
+    '', 'https://www.nokiantalviuimarit.net/', 'Maksu: itsepalvelu käteisellä tai MobilePaylla', false, false);
 
 -- Insert opening hours for Halkoniemi
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES

@@ -6,7 +6,12 @@ CREATE TABLE sauna_private.sauna (
     name TEXT,
     street_address TEXT,
     postal_code TEXT,
-    city TEXT
+    city TEXT,
+    phone TEXT,
+    web_page TEXT,
+    info text,
+    kiosk BOOLEAN,
+    restaurant BOOLEAN
 );
 
 CREATE TABLE sauna_private.opening_hour (

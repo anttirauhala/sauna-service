@@ -1,6 +1,7 @@
 -- Insert Räikkä sauna
-INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city) VALUES
-    ('550e8400-e29b-41d4-a716-446655440000', 'Räikkä', 'Räikäntie 3', '33470', 'Ylöjärvi');
+INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, phone, web_page, info, kiosk, restaurant) VALUES
+    ('550e8400-e29b-41d4-a716-446655440000', 'Räikän sauna', 'Räikäntie 3', '33470', 'Ylöjärvi',
+    '', 'https://www.ylojarvenryhti.fi/hiihto/avantouinti/', 'Maksu itsepalveluna käteisellä', false, false);
 
 -- Insert opening hours for Räikkä
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES

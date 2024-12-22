@@ -1,7 +1,8 @@
 
 -- Insert Suolijärven sauna
-INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city) VALUES
-    ('a9594a00-e4bd-4093-a9e1-79a24a3b3b7a', 'Suolijärven sauna', ' Suolijärvenkatu 5', '33720', 'Tampere');
+INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, phone, web_page, info, kiosk, restaurant) VALUES
+    ('a9594a00-e4bd-4093-a9e1-79a24a3b3b7a', 'Suolijärven sauna', ' Suolijärvenkatu 5', '33720', 'Tampere',
+        '+358 400 243 559', 'https://juttusauna.fi/suolijarven-sauna/', 'Uusi sauna aloittaa kolmantena saunana Suolijärvellä jouluaattona 2024. Saunavuoro varattava etukäteen. Saunojen aukioloaika on edelleen jaettu tunnin vuoroihin, jotka näet varaussivustolla.', false, false);
 
 -- Insert opening hours for Suolijärven sauna
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES

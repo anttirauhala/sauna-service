@@ -1,6 +1,7 @@
 -- Insert Rauhaniemi sauna
-INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city) VALUES
-    ('e5464683-0de2-46f7-b84b-0ae7aac715b5', 'Rauhaniemen kansankylpylä', 'Rauhaniementie 24', '33180', 'Tampere');
+INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, phone, web_page, info, kiosk, restaurant) VALUES
+    ('e5464683-0de2-46f7-b84b-0ae7aac715b5', 'Rauhaniemen kansankylpylä', 'Rauhaniementie 24', '33180', 'Tampere',
+    '+358 50 326 9815', 'https://rauhaniemi.net/', 'Kaksi saunaa, joista pienemmässä yleensä miedommat löylyt. Makkaranpaisto mahdollisuus sähkögrillissä.', true, false);
 
 -- Insert opening hours for Rauhaniemi
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES

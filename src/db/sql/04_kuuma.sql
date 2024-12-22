@@ -1,6 +1,8 @@
 -- Insert Saunaravintola Kuuma
-INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city) VALUES
-    ('e0f75180-7e9e-4b2c-a72f-7cdd0c56ea11', 'Saunaravintola Kuuma', 'Laukontori 21', '33100', 'Tampere');
+INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, phone, web_page, info, kiosk, restaurant) VALUES
+    ('e0f75180-7e9e-4b2c-a72f-7cdd0c56ea11', 'Saunaravintola Kuuma', 'Laukontori 21', '33100', 'Tampere',
+    '+358 50 5170559', 'https://www.saunaravintolakuuma.fi', 'Pyyhkeitä, uikkareita ja saunatossuja vuokrattavana', false, true);
+
 
 -- Insert opening hours for Saunaravintola Kuuma
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES

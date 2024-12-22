@@ -1,5 +1,6 @@
-INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city) VALUES
-    ('40d72a2e-319f-4989-a634-f1d123edd29e', 'Rajaportin sauna', 'Pispalan valtatie 9', '33250', 'Tampere');
+INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, phone, web_page, info, kiosk, restaurant) VALUES
+    ('40d72a2e-319f-4989-a634-f1d123edd29e', 'Rajaportin sauna', 'Pispalan valtatie 9', '33250', 'Tampere',
+    '+358 40 776 5198', 'https://www.rajaportinsauna.fi/', 'Suomen vanhin yleinen sauna. Ei pulahdusmahdollisuutta. Kahvio.', true, true);
 
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES
     ('607c1878-57d1-4685-8275-d395f3978541', '40d72a2e-319f-4989-a634-f1d123edd29e', 'MONDAY', '16:00', '22:00'),
