@@ -2,8 +2,8 @@
 -- Insert FLOU sauna
 INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, phone, web_page, info, kiosk, restaurant) VALUES
     ('8d2b44bd-d2e6-4145-9c2f-a454d73201be', 'FLOU Sauna', 'Jalkasaarentie 7, Rosendahlin Laituri', '33230', 'Tampere',
-    '+358 44 249 3834', 'https://www.flousauna.fi/', 'Avoinna Rosendahlin laiturin kupeessa avantosaunana 10.11.2024-15.4.2025. Kesällä Tampreeen keskustassa.
-    Pikkupurtavaa ja keittoa arkisin, viikonloppuisin lisänä aamiainen. Voit piipahtaa kahville tai drinkille ohikulkumatkalla. Voit myös vuokrata pyyhkeen. Parkeeraus: 
+    '+358 44 249 3834', 'https://www.flousauna.fi/', 'Avoinna Rosendahlin laiturin kupeessa avantosaunana 10.11.2024-15.4.2025. Kesällä Tampereen keskustassa.
+Pikkupurtavaa ja keittoa arkisin, viikonloppuisin lisänä aamiainen. Voit piipahtaa kahville tai drinkille ohikulkumatkalla. Voit myös vuokrata pyyhkeen. Parkeeraus: 
     Jalkasaarentien lopussa, tästä noin n.250 metrin kävely alukseen. Kulku lauttaan Rosendahlin laiturilta.', true, true);
 
 -- Insert opening hours for FLOU sauna
