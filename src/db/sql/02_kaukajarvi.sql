@@ -1,7 +1,7 @@
 -- Insert Kaukajärvi sauna
 INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, phone, web_page, info, kiosk, restaurant) VALUES
     ('24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'Kaukajärven sauna', 'Kangasalantie 80', '33730', 'Tampere',
-      '+358 40 590 0539', 'https://www.kaukajarvensauna.fi/', 'Huomioithan liikennemerkit parkkeeramisesta', true, false);
+      '+358 40 590 0539', 'https://www.kaukajarvensauna.fi/', 'Huomioithan liikennemerkit parkkeeramisesta. Hiljaiset tunnit: ma & ke klo 17.00-18.00 (vanhat saunat), la & su klo 16.00-17.00 (uusi sauna).', true, false);
 
 -- Insert opening hours for Kaukajärvi
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES
