@@ -1,5 +1,4 @@
 
--- Insert Suomensaaren sauna
 INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, phone, web_page, info, kiosk, restaurant) VALUES
     ('73ca9aa4-01f9-4ec2-9922-df4982fe3a1e', 'Suomensaaren sauna', 'Suomensaarenkatu 9', '33410', 'Tampere',
         '', 'https://lielahdenkipina.fi/suomensaarensauna/', 'Saunalle tulee vain järvivesi, joka on hyvä huomioida ottamalla mukaan vettä juotavaksi. Kahvio. Käteinen ei käy.', true, false);
@@ -12,6 +11,15 @@ INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, clo
     ('a05dd246-4041-46e6-a0c0-a92ccb39600b', '73ca9aa4-01f9-4ec2-9922-df4982fe3a1e', 'FRIDAY', '16:00', '21:00'),
     ('84b5d80f-1f4a-4d16-9faf-f8bfbad124c7', '73ca9aa4-01f9-4ec2-9922-df4982fe3a1e', 'SATURDAY', '14:00', '18:00'),
     ('dd96f997-490a-496b-bc63-f57f4690cb81', '73ca9aa4-01f9-4ec2-9922-df4982fe3a1e', 'SUNDAY', '15:00', '19:00');
+
+-- OR
+
+-- Insert summer opening hours for Suomensaaren sauna (1.5.-31.8.)
+INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES
+    ('a61f467c-2e49-43a0-a195-a3f6470c006c', '73ca9aa4-01f9-4ec2-9922-df4982fe3a1e', 'MONDAY', '17:00', '21:00'),
+    ('63913988-7a19-48f1-b8ff-7323156ca1df', '73ca9aa4-01f9-4ec2-9922-df4982fe3a1e', 'WEDNESDAY', '17:00', '21:00'),
+    ('a05dd246-4041-46e6-a0c0-a92ccb39600b', '73ca9aa4-01f9-4ec2-9922-df4982fe3a1e', 'FRIDAY', '18:00', '22:00'),
+    ('84b5d80f-1f4a-4d16-9faf-f8bfbad124c7', '73ca9aa4-01f9-4ec2-9922-df4982fe3a1e', 'SATURDAY', '16:00', '19:00');
 
 -- Insert prices for Suomensaaren sauna
 INSERT INTO sauna_private.price (id, opening_hour_id, price_type, price) VALUES
