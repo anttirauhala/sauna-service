@@ -11,7 +11,7 @@ INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, clo
     ('95345131-32db-4363-8775-bdd64574ef37', '75d036ab-e5f4-4a11-aeed-128506047a39', 'THURSDAY', '17:30', '21:00'),
     ('9967b0e0-3f88-4324-b45c-92149927be43', '75d036ab-e5f4-4a11-aeed-128506047a39', 'FRIDAY', '17:30', '21:00'),
     ('9ab75f57-2a46-4a1c-a721-5b8f46924bbd', '75d036ab-e5f4-4a11-aeed-128506047a39', 'SATURDAY', '16:00', '19:00'),
-    ('a4299e69-fc53-4f1d-aa60-73487e4e4a0f', '75d036ab-e5f4-4a11-aeed-128506047a39', 'SUNDAY', '17:30', '18:00');
+    ('a4299e69-fc53-4f1d-aa60-73487e4e4a0f', '75d036ab-e5f4-4a11-aeed-128506047a39', 'SUNDAY', '17:30', '21:00');
 
 -- Insert prices for Tohlopin tynnyrisauna
 INSERT INTO sauna_private.price (id, opening_hour_id, price_type, price) VALUES
