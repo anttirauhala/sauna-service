@@ -5,13 +5,13 @@ INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, ph
 
 -- Insert opening hours for Kaukajärvi
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES
-    ('f26237ca-b6e1-4f43-936c-cfe9b0d8ca34', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'MONDAY', '12:00', '21:30'),
-    ('fbdf2943-ce20-4e14-85c1-cc8a9eed222c', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'TUESDAY', '12:00', '21:30'),
-    ('18047c83-65f1-4161-b8db-b76b88cd265a', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'WEDNESDAY', '12:00', '21:30'),
-    ('e034198c-ed01-40aa-81ae-7af440c0c876', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'THURSDAY', '12:00', '21:30'),
-    ('b112e21b-3391-4f93-aa03-e9a9d371de8d', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'FRIDAY', '12:00', '21:30'),
-    ('6aaed8dc-8d18-450d-9db2-c559e146b698', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'SATURDAY', '12:00', '21:30'),
-    ('dfa89100-0a4e-4476-974c-88fea7496417', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'SUNDAY', '12:00', '21:30');
+    ('f26237ca-b6e1-4f43-936c-cfe9b0d8ca34', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'MONDAY', '12:00', '22:00'),
+    ('fbdf2943-ce20-4e14-85c1-cc8a9eed222c', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'TUESDAY', '12:00', '22:00'),
+    ('18047c83-65f1-4161-b8db-b76b88cd265a', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'WEDNESDAY', '12:00', '22:00'),
+    ('e034198c-ed01-40aa-81ae-7af440c0c876', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'THURSDAY', '12:00', '22:00'),
+    ('b112e21b-3391-4f93-aa03-e9a9d371de8d', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'FRIDAY', '12:00', '22:00'),
+    ('6aaed8dc-8d18-450d-9db2-c559e146b698', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'SATURDAY', '12:00', '22:00'),
+    ('dfa89100-0a4e-4476-974c-88fea7496417', '24a7dd00-bcfb-46c9-9e12-32a7a6c87fca', 'SUNDAY', '12:00', '22:00');
 
 -- Insert prices for Kaukajärvi
 INSERT INTO sauna_private.price (id, opening_hour_id, price_type, price) VALUES
