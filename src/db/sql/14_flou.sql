@@ -10,8 +10,8 @@ INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, clo
     ('42c745b5-f98b-4f86-a259-012a4cde0b80', '8d2b44bd-d2e6-4145-9c2f-a454d73201be', 'WEDNESDAY', '16:00', '22:00'),
     ('a28c7d9e-0f0f-467d-8823-f29d29ca7e2b', '8d2b44bd-d2e6-4145-9c2f-a454d73201be', 'THURSDAY', '16:00', '22:00'),
     ('786abe3c-708b-4a4b-826b-692a880a1391', '8d2b44bd-d2e6-4145-9c2f-a454d73201be', 'FRIDAY', '16:00', '22:00'),
-    ('12613bc0-3be1-4975-8631-f553f545c01f', '8d2b44bd-d2e6-4145-9c2f-a454d73201be', 'SATURDAY', '08:00', '22:00'),
-    ('428f3549-74da-4f1a-a5e4-2b1cca39d4da', '8d2b44bd-d2e6-4145-9c2f-a454d73201be', 'SUNDAY', '08:00', '22:00');
+    ('12613bc0-3be1-4975-8631-f553f545c01f', '8d2b44bd-d2e6-4145-9c2f-a454d73201be', 'SATURDAY', '12:00', '22:00'),
+    ('428f3549-74da-4f1a-a5e4-2b1cca39d4da', '8d2b44bd-d2e6-4145-9c2f-a454d73201be', 'SUNDAY', '12:00', '22:00');
 
 -- Insert prices for FLOU sauna
 INSERT INTO sauna_private.price (id, opening_hour_id, price_type, price) VALUES
