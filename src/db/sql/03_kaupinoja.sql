@@ -1,7 +1,7 @@
 -- Insert Kaupinojan sauna
 INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, phone, web_page, info, kiosk, restaurant) VALUES
     ('e7017ab9-5c52-4cc8-9be8-bea9c98195ec', 'Kaupinojan sauna', 'Kaupinpuistonkatu 1', '33500', 'Tampere',
-            '+358 50 551 7732', 'https://talviuimarit.fi/', 'Asiakkaiden pysäköinti poikkeuksia lukuunottamatta tapahtuu ylhäällä olevalla pysäköintialueella. Käteinen ei käy.', true, false);
+            '+358 50 551 7732', 'https://talviuimarit.fi/', "Asiakkaiden pysäköinti poikkeuksia lukuunottamatta tapahtuu ylhäällä olevalla pysäköintialueella. Käteinen ei käy. Lauantain ja sunnuntain ensimmäinen tunti (klo 12:00 - 13:00) on hiljainen tunti saunassa!", true, false);
 
 -- Insert opening hours for Kaupinojan sauna
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES

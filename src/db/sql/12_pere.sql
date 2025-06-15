@@ -6,13 +6,13 @@ INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, ph
 
 -- Insert opening hours for Pereensaaren sauna
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES
-    ('4bd5d8d7-c116-4297-ab13-da03ff6a6ca1', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'MONDAY', '16:00', '22:00'),
-    ('bf75802c-7bf8-4a72-8d02-ce6d0edc3297', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'TUESDAY', '16:00', '22:00'),
-    ('bbe880bc-7516-443f-94d1-3a077dc71b41', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'WEDNESDAY', '16:00', '22:00'),
-    ('033924fb-aa4d-47b0-8a8f-e86caf36b48c', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'THURSDAY', '16:00', '22:00'),
-    ('8a506f81-363e-4648-94e4-d71e3c338172', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'FRIDAY', '16:00', '22:00'),
-    ('caa49258-6e5d-4ff0-bab2-2b4778430019', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'SATURDAY', '14:00', '22:00'),
-    ('d444b249-6c4f-4e3a-b6af-c1224dcc938f', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'SUNDAY', '14:00', '22:00');
+    ('4bd5d8d7-c116-4297-ab13-da03ff6a6ca1', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'MONDAY', '12:00', '22:00'),
+    ('bf75802c-7bf8-4a72-8d02-ce6d0edc3297', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'TUESDAY', '12:00', '22:00'),
+    ('bbe880bc-7516-443f-94d1-3a077dc71b41', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'WEDNESDAY', '12:00', '22:00'),
+    ('033924fb-aa4d-47b0-8a8f-e86caf36b48c', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'THURSDAY', '12:00', '22:00'),
+    ('8a506f81-363e-4648-94e4-d71e3c338172', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'FRIDAY', '12:00', '22:00'),
+    ('caa49258-6e5d-4ff0-bab2-2b4778430019', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'SATURDAY', '12:00', '22:00'),
+    ('d444b249-6c4f-4e3a-b6af-c1224dcc938f', 'a9a1cb1f-a001-4bdd-9afb-1fb90fc839a4', 'SUNDAY', '12:00', '22:00');
 
 -- Insert prices for Pereensaaren sauna
 INSERT INTO sauna_private.price (id, opening_hour_id, price_type, price) VALUES

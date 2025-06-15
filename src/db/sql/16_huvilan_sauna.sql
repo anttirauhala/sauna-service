@@ -1,14 +1,14 @@
 -- Insert Huvilan sauna
 INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, web_page, info, kiosk, restaurant) VALUES
     ('0fb39581-d4b6-472f-851c-d43b770b1325', 'Huvilan saunat', 'Uramonkatu 9', '33240', 'Tampere', 'https://www.tahmelanhuvila.fi/sauna/', 
-    'Tahmelan Huvilan kaksi saunaa Pyhäjärven rannalla. Oma puulämmitteinen sisäsauna ja 1.9.2024 avattu Rantaportti- pihasauna. Mahdollisuus kastautua Pyhäjärvessä myös talvisin. HUOM! NAISTEN VUORO TO KLO 18-20', true, false);
+    'Tahmelan Huvilan kaksi saunaa Pyhäjärven rannalla. Oma puulämmitteinen sisäsauna ja 1.9.2024 avattu Rantaportti- pihasauna. Mahdollisuus kastautua Pyhäjärvessä myös talvisin. HUOM! NAISTEN VUORO TO KLO 19-21', true, false);
 
--- Insert opening hours for Huvilan sauna
+-- Insert summer opening hours for Huvilan sauna (1.6.-30.9.2025)
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES
-    ('9cffff46-fa09-4002-98b4-5a743370475a', '0fb39581-d4b6-472f-851c-d43b770b1325', 'TUESDAY', '15:00', '20:00'),
-    ('2f76abae-3329-4cea-9648-d7d71165bfbc', '0fb39581-d4b6-472f-851c-d43b770b1325', 'THURSDAY', '15:00', '18:00'),
-    ('25239230-8670-4e7e-bc8b-8a921eb1f3d6', '0fb39581-d4b6-472f-851c-d43b770b1325', 'THURSDAY', '18:00', '20:00'),
-    ('e521b98e-48d2-4d8a-b151-f528804da6e6', '0fb39581-d4b6-472f-851c-d43b770b1325', 'SUNDAY', '14:00', '20:00');
+    ('9cffff46-fa09-4002-98b4-5a743370475a', '0fb39581-d4b6-472f-851c-d43b770b1325', 'TUESDAY', '15:00', '21:00'),
+    ('2f76abae-3329-4cea-9648-d7d71165bfbc', '0fb39581-d4b6-472f-851c-d43b770b1325', 'THURSDAY', '15:00', '19:00'),
+    ('25239230-8670-4e7e-bc8b-8a921eb1f3d6', '0fb39581-d4b6-472f-851c-d43b770b1325', 'THURSDAY', '19:00', '21:00'),
+    ('e521b98e-48d2-4d8a-b151-f528804da6e6', '0fb39581-d4b6-472f-851c-d43b770b1325', 'SUNDAY', '14:00', '21:00');
 
 -- Insert prices for Huvilan sauna
 INSERT INTO sauna_private.price (id, opening_hour_id, price_type, price) VALUES
