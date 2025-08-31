@@ -1,7 +1,7 @@
 -- Insert Räikkä sauna
 INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, phone, web_page, info, kiosk, restaurant) VALUES
     ('550e8400-e29b-41d4-a716-446655440000', 'Räikän sauna', 'Räikäntie 3', '33470', 'Ylöjärvi',
-    '', 'https://www.ylojarvenryhti.fi/hiihto/avantouinti/', 'Maksu itsepalveluna käteisellä', false, false);
+    '', 'https://www.ylojarvenryhti.fi/hiihto/avantouinti/', 'Maksu itsepalveluna käteisellä. Avantosaunakausi alkaa jälleen ke 1.10.2025. (päivitetty 19.8.25) ', false, false);
 
 -- Insert opening hours for Räikkä
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES

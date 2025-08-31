@@ -1,7 +1,7 @@
 -- Apian sauna
 INSERT INTO sauna_private.sauna (id, name, street_address, postal_code, city, phone, web_page, info, kiosk, restaurant) VALUES
     ('19132d75-07d3-42fe-b072-14f56be104af', 'Apian sauna', 'Urheilukatu 20', '37600', 'Valkeakoski', '', 'https://apianavantouimarit.fi/',
-     'Pysäköintialueen osoite on Urheilukatu 16-18, sauna löytyy mäen juuresta Apian uimarannalta. Käteinen ei käy.', false, false);
+     'Pysäköintialueen osoite on Urheilukatu 16-18, sauna löytyy mäen juuresta Apian uimarannalta. Käteinen ei käy. Talvikausi syyskuun viimeisestä sunnuntaista alkaen.', false, false);
 
 -- Insert opening hours for Apian sauna
 INSERT INTO sauna_private.opening_hour (id, sauna_id, weekday, opening_time, closing_time) VALUES
