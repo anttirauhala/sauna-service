@@ -141,9 +141,24 @@ const result = [
                 "closingTime": "21:00:00",
                 "prices": [
                     {
-                        "id": "da7b7899-fb66-4d02-82d3-13cc73861da1",
+                        "id": "9e0f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b",
                         "priceType": "ADULT",
                         "price": 15.00
+                    },
+                    {
+                        "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+                        "priceType": "STUDENT",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+                        "priceType": "PENSIONER",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+                        "priceType": "CONSCRIPT",
+                        "price": 13.00
                     }
                 ]
             },
@@ -154,9 +169,24 @@ const result = [
                 "closingTime": "21:00:00",
                 "prices": [
                     {
-                        "id": "4540098d-5e05-4959-8843-5e1eb1450ff3",
+                        "id": "0f1a2b3c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
                         "priceType": "ADULT",
                         "price": 15.00
+                    },
+                    {
+                        "id": "4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
+                        "priceType": "STUDENT",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
+                        "priceType": "PENSIONER",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c",
+                        "priceType": "CONSCRIPT",
+                        "price": 13.00
                     }
                 ]
             },
@@ -167,9 +197,24 @@ const result = [
                 "closingTime": "21:00:00",
                 "prices": [
                     {
-                        "id": "6764f911-9d3f-4291-b9ac-eb54cf9f5844",
+                        "id": "da7b7899-fb66-4d02-82d3-13cc73861da1",
                         "priceType": "ADULT",
                         "price": 15.00
+                    },
+                    {
+                        "id": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+                        "priceType": "STUDENT",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e",
+                        "priceType": "PENSIONER",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
+                        "priceType": "CONSCRIPT",
+                        "price": 13.00
                     }
                 ]
             },
@@ -180,9 +225,24 @@ const result = [
                 "closingTime": "21:00:00",
                 "prices": [
                     {
-                        "id": "10eee2f8-b113-407f-b33a-b877e6aa38ee",
+                        "id": "4540098d-5e05-4959-8843-5e1eb1450ff3",
                         "priceType": "ADULT",
                         "price": 15.00
+                    },
+                    {
+                        "id": "0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a",
+                        "priceType": "STUDENT",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+                        "priceType": "PENSIONER",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b7c",
+                        "priceType": "CONSCRIPT",
+                        "price": 13.00
                     }
                 ]
             },
@@ -193,9 +253,24 @@ const result = [
                 "closingTime": "21:00:00",
                 "prices": [
                     {
-                        "id": "4581568b-8fec-4bdb-a363-9aa64ba5c104",
+                        "id": "6764f911-9d3f-4291-b9ac-eb54cf9f5844",
                         "priceType": "ADULT",
                         "price": 15.00
+                    },
+                    {
+                        "id": "3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
+                        "priceType": "STUDENT",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e",
+                        "priceType": "PENSIONER",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
+                        "priceType": "CONSCRIPT",
+                        "price": 13.00
                     }
                 ]
             },
@@ -206,9 +281,24 @@ const result = [
                 "closingTime": "21:00:00",
                 "prices": [
                     {
-                        "id": "da7b7899-fb66-4d02-82d3-13cc73861da2",
+                        "id": "10eee2f8-b113-407f-b33a-b877e6aa38ee",
                         "priceType": "ADULT",
                         "price": 15.00
+                    },
+                    {
+                        "id": "6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
+                        "priceType": "STUDENT",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
+                        "priceType": "PENSIONER",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "8f9a0b1c-2d3e-4f5a-6b7c-8d9e0f1a2b3c",
+                        "priceType": "CONSCRIPT",
+                        "price": 13.00
                     }
                 ]
             },
@@ -219,9 +309,24 @@ const result = [
                 "closingTime": "21:00:00",
                 "prices": [
                     {
-                        "id": "4581568b-8fec-4bdb-a363-9aa64ba5c105",
+                        "id": "4581568b-8fec-4bdb-a363-9aa64ba5c104",
                         "priceType": "ADULT",
                         "price": 15.00
+                    },
+                    {
+                        "id": "9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d",
+                        "priceType": "STUDENT",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "0b1c2d3e-4f5a-6b7c-8d9e-0f1a2b3c4d5e",
+                        "priceType": "PENSIONER",
+                        "price": 13.00
+                    },
+                    {
+                        "id": "1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+                        "priceType": "CONSCRIPT",
+                        "price": 13.00
                     }
                 ]
             }
